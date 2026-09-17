@@ -10,7 +10,7 @@ debugger;
 
   const dotsWrap = document.createElement('div');
   dotsWrap.className = 'carousel-dots';
-
+ 
   slides.forEach((row, i) => {
     row.classList.add('carousel-slide');
 
@@ -19,7 +19,7 @@ debugger;
     if (img) {
       img.closest('picture').replaceWith(
         createOptimizedPicture(img.src, img.alt, i === 0, [{ width: '1200' }]),
-      );
+      ); 
     }
 
     track.append(row);
