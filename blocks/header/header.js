@@ -169,22 +169,4 @@ export default async function decorate(block) {
   navWrapper.append(nav);
   block.append(navWrapper);
 }
-  // build search + action icons (like Pantaloons' tools section)
-  const navTools = nav.querySelector('.nav-tools');
-  if (navTools) {
-    navTools.innerHTML = `
-      <div class="nav-search">
-        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M21 21l-4.35-4.35m0 0a7 7 0 1 0-9.9-9.9 7 7 0 0 0 9.9 9.9z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-        <input type="text" placeholder="Search" />
-      </div>
-      <button class="nav-icon-btn" aria-label="Wishlist">
-        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 4 7 4c2 0 3.5 1 5 3 1.5-2 3-3 5-3 4 0 6.5 4.5 4.5 8.5C19 16.65 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-      </button>
-      <button class="nav-icon-btn" aria-label="Account">
-        <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-      </button>
-      <button class="nav-icon-btn" aria-label="Cart">
-        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M3 4h2l2.4 12h11.2L20 8H6" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg>
-      </button>
-    `;
-  }
+
