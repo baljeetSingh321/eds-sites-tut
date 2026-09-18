@@ -63,6 +63,6 @@ debugger;
   let timer = setInterval(() => goTo(current + 1), 4000);
   block.addEventListener('mouseenter', () => clearInterval(timer));
   block.addEventListener('mouseleave', () => {
-    timer = setInterval(() => goTo(current + 1), 4000);
+    timer = setInterval(() => goTo(current + 1), 2000);
   });
 }
