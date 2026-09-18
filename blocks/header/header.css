@@ -270,3 +270,57 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
+:root {
+  --header-accent: #009688; /* swap for your own brand color */
+}
+
+header nav .nav-brand a {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--header-accent);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+header nav .nav-sections ul > li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+header nav .nav-tools {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #ccc;
+  padding: 4px 0;
+  color: var(--header-accent);
+}
+
+.nav-search input {
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  width: 140px;
+}
+
+.nav-icon-btn {
+  background: none;
+  border: none;
+  color: var(--header-accent);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+}
+
+header .nav-wrapper {
+  border-bottom: 1px solid #eee;
+}
