@@ -61,7 +61,7 @@ debugger;
 
   // autoplay, pause on hover
   let timer = setInterval(() => goTo(current + 1), 4000);
-  // block.addEventListener('mouseenter', () => clearInterval(timer));
+  block.addEventListener('mouseenter', () => clearInterval(timer));
   block.addEventListener('mouseleave', () => {
     timer = setInterval(() => goTo(current + 1), 2000);
   });
